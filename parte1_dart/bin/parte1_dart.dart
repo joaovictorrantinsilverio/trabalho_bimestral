@@ -1,6 +1,7 @@
 import 'models/filme.dart';
 import 'models/Serie.dart';
 import 'models/Documentario.dart';
+import 'models/Catalogo.dart';
 
 void main() {
   
@@ -34,6 +35,16 @@ void main() {
     temaAbordado: 'Assasinato em série'
   );
 
+  // List catálogo
+  final catalogo = Catalogo(
+  nome: 'Meus favoritos',
+  );
+
+  catalogo.adicionar(filme);
+  catalogo.adicionar(serie);
+  catalogo.adicionar(doc);
+
+  //Saida de dados
   print('===== [1] ENTIDADE PRINCIPAL =====');
   print(
     'Filme: ${filme.titulo} | '
@@ -64,4 +75,13 @@ void main() {
     '${doc.temaAbordado}'
   );
 
+  print('');
+  print('===== [3] COMPOSIÇÃO =====');
+  print(
+    'Catálogo "${catalogo.nome}" contém ${catalogo.obras.length} obras:',
+  );
+
+  for (final obra in catalogo.obras) {
+    print('  - ${obra.titulo}');
+  }
 }
