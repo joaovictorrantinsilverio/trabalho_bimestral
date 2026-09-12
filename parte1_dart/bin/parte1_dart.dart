@@ -1,5 +1,22 @@
 import 'package:parte1_dart/parte1_dart.dart' as parte1_dart;
 
-void main(List<String> arguments) {
-  print('Hello world: ${parte1_dart.calculate()}!');
+import 'models/filme.dart';
+
+void main() {
+  
+  final filme = Filme(
+    titulo: 'O Grande Exemplo',
+    duracao: 120,
+    nota: 8.7,
+    dataLancamento: DateTime(2014, 11, 6),
+    genero: 'Ficção científica',
+  );
+
+  print('===== [1] ENTIDADE PRINCIPAL =====');
+  print(
+    'Filme: ${filme.titulo} | '
+    '${filme.duracao} minutos | '
+    'Nota: ${filme.nota} | '
+    '${filme.dataLancamento.year}',
+  );
 }
