@@ -1,15 +1,14 @@
-class Filme {
-  String titulo;
+import 'ObraAudiovisual.dart';
+
+class Filme extends ObraAudiovisual{
   int duracao;
-  double nota;
-  DateTime dataLancamento;
-  String genero;
 
   Filme({
-    required this.titulo,
-    required this.duracao,
-    required this.nota,
-    required this.dataLancamento,
-    this.genero = 'Não informado',
+    required super.titulo,
+    required super.nota,
+    required super.dataLancamento,
+    required super.genero,
+
+    required this.duracao
   });
 }

@@ -4,42 +4,34 @@ import 'models/Documentario.dart';
 
 void main() {
   
-  //Filmes
+  // Filmes
   final filme = Filme(
     titulo: 'Homem de Metal',
     duracao: 120,
     nota: 8.7,
     dataLancamento: DateTime(2014, 11, 6),
-    genero: 'Ação/Super-Heróis',
+    genero: 'Ação/Super-Heróis'
   );
 
-  final filme2 = Filme(
-    titulo: 'Aranha-Homem',
-    duracao: 136,
-    nota: 9.6,
-    dataLancamento: DateTime(2012, 7, 3),
-    genero: 'Ação/Super-Heróis',
-  );
-
-  //Séries
-  final serie = Serie (
+  // Séries
+  final serie = Serie(
     titulo: 'The Bois',
-    duracao: 55,
-    nota: 7.9,
-    dataLancamento: DateTime(2019, 07, 26),
-    genero: 'Ação/Super-Heroís',
+    duracaoEpisodios: 55,
+    nota: 8.3,
+    dataLancamento: DateTime(2019, 7, 26),
+    genero: 'Ação/Super-heróis',
     quantidadeTemporadas: 5,
     episodiosPorTemporada: 8
-  );
+  ); 
 
   // Documentários
-  final documentario = Documentario (
-    titulo: 'American Murder',
-    duracao: 120,
-    nota: 8.7,
-    dataLancamento: DateTime(2019, 6, 9),
-    genero: 'Crimes Reais',
-    temaAbordado: 'Assasinatos'
+  final doc = Documentario(
+    titulo: 'Assasino Americano',
+    duracao: 200,
+    nota: 9.3,
+    dataLancamento: DateTime(2020),
+    genero: 'Documentario',
+    temaAbordado: 'Assasinato em série'
   );
 
   print('===== [1] ENTIDADE PRINCIPAL =====');
@@ -47,34 +39,29 @@ void main() {
     'Filme: ${filme.titulo} | '
     '${filme.duracao} minutos | '
     'Nota: ${filme.nota} | '
-    '${filme.dataLancamento.year}',
-  );
-
-  print(
-    'Filme: ${filme2.titulo} | '
-    '${filme2.duracao} minutos | '
-    'Nota: ${filme2.nota} | '
-    '${filme2.dataLancamento.year}',
+    '${filme.dataLancamento.year} | '
+    '${filme.genero}'
   );
 
   print("");
-
   print('===== [2] HERANÇA =====');
   print(
     'Série: ${serie.titulo} | '
-    '${serie.duracao} minutos | '
-    'Nota: ${serie.nota} | '
+    '${serie.duracaoEpisodios} minutos | '
+    '${serie.nota} | '
     '${serie.dataLancamento.year} | '
+    '${serie.genero} | '
     'Temporadas: ${serie.quantidadeTemporadas} | '
-    'Episódios por Temporada: ${serie.episodiosPorTemporada}'
+    'Episódios por temporada: ${serie.episodiosPorTemporada}'
   );
 
   print(
-    'Documentário: ${documentario.titulo} | '
-    '${documentario.duracao} minutos | '
-    'Nota: ${documentario.nota} | '
-    '${documentario.dataLancamento.year} | '
-    'Tema: ${documentario.temaAbordado}'
-    
+    'Documentário: ${doc.titulo} | '
+    '${doc.duracao} | '
+    '${doc.nota} | '
+    '${doc.dataLancamento.year} | '
+    '${doc.genero} | '
+    '${doc.temaAbordado}'
   );
+
 }

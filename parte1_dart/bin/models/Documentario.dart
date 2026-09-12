@@ -1,15 +1,16 @@
-import 'filme.dart';
+import 'ObraAudiovisual.dart';
 
-class Documentario extends Filme {
+class Documentario extends ObraAudiovisual {
   String temaAbordado;
+  int duracao;
 
   Documentario({
     required super.titulo,
-    required super.duracao,
     required super.nota,
     required super.dataLancamento,
     required super.genero,
 
-    required this.temaAbordado
+    required this.temaAbordado,
+    required this.duracao
   });
 }
