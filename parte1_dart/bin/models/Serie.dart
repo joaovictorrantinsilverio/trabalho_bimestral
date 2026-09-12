@@ -15,4 +15,17 @@ class Serie extends ObraAudiovisual{
     required this.episodiosPorTemporada,
     required this.duracaoEpisodios
   });
+
+  @override
+  void mostrarInfo() {
+    print(
+      'Série: $titulo | '
+      '$duracaoEpisodios | '
+      '$episodiosPorTemporada | '
+      'Temporadas: $quantidadeTemporadas | '
+      '$nota | '
+      '$dataLancamento.year | '
+      '$genero'
+    );
+  }
 }

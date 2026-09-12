@@ -10,4 +10,12 @@ class ObraAudiovisual {
     required this.dataLancamento,
     this.genero = 'Não informado',
   });
+
+  void mostrarInfo() {
+    print(
+      'Título: $titulo | '
+      '$nota | '
+      '$dataLancamento | '
+      '$genero');
+  }
 }

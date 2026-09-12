@@ -13,4 +13,16 @@ class Documentario extends ObraAudiovisual {
     required this.temaAbordado,
     required this.duracao
   });
+
+  @override
+  void mostrarInfo() {
+    print(
+      'Documentario: $titulo | '
+      '$duracao | '
+      '$nota | '
+      '$dataLancamento | '
+      '$genero | '
+      '$temaAbordado'
+    );
+  }
 }

@@ -4,7 +4,6 @@ import 'models/Documentario.dart';
 import 'models/Catalogo.dart';
 
 void main() {
-  
   // Filmes
   final filme = Filme(
     titulo: 'Homem de Metal',
@@ -46,35 +45,14 @@ void main() {
 
   //Saida de dados
   print('===== [1] ENTIDADE PRINCIPAL =====');
-  print(
-    'Filme: ${filme.titulo} | '
-    '${filme.duracao} minutos | '
-    'Nota: ${filme.nota} | '
-    '${filme.dataLancamento.year} | '
-    '${filme.genero}'
-  );
+  filme.mostrarInfo();
 
   print("");
   print('===== [2] HERANÇA =====');
-  print(
-    'Série: ${serie.titulo} | '
-    '${serie.duracaoEpisodios} minutos | '
-    '${serie.nota} | '
-    '${serie.dataLancamento.year} | '
-    '${serie.genero} | '
-    'Temporadas: ${serie.quantidadeTemporadas} | '
-    'Episódios por temporada: ${serie.episodiosPorTemporada}'
-  );
+  serie.mostrarInfo();
 
-  print(
-    'Documentário: ${doc.titulo} | '
-    '${doc.duracao} | '
-    '${doc.nota} | '
-    '${doc.dataLancamento.year} | '
-    '${doc.genero} | '
-    '${doc.temaAbordado}'
-  );
-
+  doc.mostrarInfo();
+  
   print('');
   print('===== [3] COMPOSIÇÃO =====');
   print(
@@ -84,4 +62,7 @@ void main() {
   for (final obra in catalogo.obras) {
     print('  - ${obra.titulo}');
   }
+
+  print('===== [4] ENCAPSULAMENTO =====');
+  
 }

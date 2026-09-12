@@ -11,4 +11,15 @@ class Filme extends ObraAudiovisual{
 
     required this.duracao
   });
+
+  @override
+  void mostrarInfo() {
+    print(
+      'Filme: $titulo | '
+      '$duracao minutos | '
+      '$nota | '
+      '$dataLancamento.year | '
+      '$genero | '
+    );
+  }
 }
