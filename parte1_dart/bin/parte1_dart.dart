@@ -56,7 +56,7 @@ void main() {
   print('');
   print('===== [3] COMPOSIÇÃO =====');
   print(
-    'Catálogo "${catalogo.nome}" contém ${catalogo.obras.length} obras:',
+    'Catálogo "${catalogo.nome}" contém ${catalogo.quantidadeTotal} obras:',
   );
 
   for (final obra in catalogo.obras) {
@@ -64,5 +64,13 @@ void main() {
   }
 
   print('===== [4] ENCAPSULAMENTO =====');
-  
+  catalogo.adicionar(Filme(
+    titulo: 'Lentos e Calmos',
+    duracao: 106,
+    nota: 4.9,
+    genero: 'Ação/Aventura',
+    dataLancamento: DateTime(2001, 9, 11)
+  ));
+
+  print('Total de Obras Audiovisuais: ${catalogo.quantidadeTotal}');
 }
