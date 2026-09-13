@@ -1,6 +1,5 @@
 import 'models/filme.dart';
 import 'models/Serie.dart';
-import 'models/Documentario.dart';
 import 'models/Catalogo.dart';
 
 void main() {
