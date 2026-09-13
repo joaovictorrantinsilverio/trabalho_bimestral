@@ -32,6 +32,50 @@ void main() {
     ),
   );
 
+  catalogo.adicionar(
+    Filme(
+      titulo: 'O Grande Exemplo',
+      duracao: 152,
+      nota: 9.0,
+      dataLancamento: DateTime(2008, 07, 18),
+      genero: 'Ação',
+    ),
+  );
+
+  catalogo.adicionar(
+    Serie(
+      titulo: 'O Grande Exemplo 2',
+      duracaoEpisodios: 50,
+      nota: 8.7,
+      dataLancamento: DateTime(2009, 07, 15),
+      genero: 'Ficção/Suspense',
+      quantidadeTemporadas: 5,
+      episodiosPorTemporada: 10,
+    ),
+  );
+
+  catalogo.adicionar(
+    Filme(
+      titulo: 'O Grande Exemplo - O Fim',
+      duracao: 152,
+      nota: 8.7,
+      dataLancamento: DateTime(2010, 11, 07),
+      genero: 'Ficção Científica',
+    ),
+  );
+
+  catalogo.adicionar(
+    Serie(
+      titulo: 'O Grande Exemplo - O Retorno',
+      duracaoEpisodios: 50,
+      nota: 8.5,
+      dataLancamento: DateTime(2011, 10, 10),
+      genero: 'Ação/Drama',
+      quantidadeTemporadas: 5,
+      episodiosPorTemporada: 10,
+    ),
+  );
+
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,

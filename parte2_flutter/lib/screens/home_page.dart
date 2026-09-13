@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:parte2_flutter/screens/obra_card.dart';
+
 import '../models/Catalogo.dart';
+import 'obra_card.dart';
 
 class HomePage extends StatelessWidget {
   final Catalogo catalogo;
@@ -16,14 +17,18 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Catálogo de Filmes'),
       ),
+
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
+
         children: [
           Padding(
             padding: const EdgeInsets.all(16.0),
+
             child: Text(
               'Total: ${catalogo.quantidadeTotal}',
+
               style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -32,16 +37,16 @@ class HomePage extends StatelessWidget {
           ),
 
           Expanded(
-            child: ListView(
-              children: catalogo.obras.map((obra) => ObraCard(obraAudiovisual: obra)).toList(),
-            ),
-          ),
+            child: ListView.builder(
+              itemCount: catalogo.obras.length,
 
-          Expanded(
-            child: ListView(
-              children: const [
-                // Preparação para uso da lista do EXERCICIO 7
-              ],
+              itemBuilder: (context, index) {
+                final obra = catalogo.obras[index];
+
+                return ObraCard(
+                  obraAudiovisual: obra,
+                );
+              },
             ),
           ),
         ],
