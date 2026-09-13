@@ -24,13 +24,14 @@ void main() {
   ); 
 
   // Documentários
-  final doc = Documentario(
+  final doc = Serie(
     titulo: 'Assasino Americano',
-    duracao: 200,
+    duracaoEpisodios: 55,
     nota: 9.3,
     dataLancamento: DateTime(2020),
-    genero: 'Documentario',
-    temaAbordado: 'Assasinato em série'
+    genero: 'Ação',
+    quantidadeTemporadas: 5,
+    episodiosPorTemporada: 8
   );
 
   // List catálogo
@@ -40,7 +41,7 @@ void main() {
 
   catalogo.adicionar(filme);
   catalogo.adicionar(serie);
-  catalogo.adicionar(doc);
+  catalogo.adicionar(serie);
 
   //Saida de dados
   print('===== [1] ENTIDADE PRINCIPAL =====');
