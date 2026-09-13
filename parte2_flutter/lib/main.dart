@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'models/Catalogo.dart';
 import 'models/Filme.dart';
 import 'models/Serie.dart';
-import 'models/Documentario.dart';
 import 'screens/home_page.dart';
 
 void main() {
@@ -15,32 +14,21 @@ void main() {
     Filme(
       titulo: 'Homem de Metal',
       duracao: 120,
-      nota: 8.7,
-      dataLancamento: DateTime(2014, 11, 6),
-      genero: 'Ação/Super-Heróis',
+      nota: 7.9,
+      dataLancamento: DateTime(2008, 05, 02),
+      genero: 'Ação/Super-Herói',
     ),
   );
 
   catalogo.adicionar(
     Serie(
-      titulo: 'The Bois',
+      titulo: 'Breaking Good',
       duracaoEpisodios: 55,
-      nota: 8.3,
-      dataLancamento: DateTime(2019, 7, 26),
-      genero: 'Ação/Super-heróis',
+      nota: 9.5,
+      dataLancamento: DateTime(2008, 01, 20),
+      genero: 'Drama/Suspense',
       quantidadeTemporadas: 5,
       episodiosPorTemporada: 8,
-    ),
-  );
-
-  catalogo.adicionar(
-    Documentario(
-      titulo: 'Assassino Americano',
-      duracao: 200,
-      nota: 9.3,
-      dataLancamento: DateTime(2020),
-      genero: 'Documentário',
-      temaAbordado: 'Assassinato em série',
     ),
   );
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:parte2_flutter/screens/obra_card.dart';
 import '../models/Catalogo.dart';
 
 class HomePage extends StatelessWidget {
@@ -27,6 +28,12 @@ class HomePage extends StatelessWidget {
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
+            ),
+          ),
+
+          Expanded(
+            child: ListView(
+              children: catalogo.obras.map((obra) => ObraCard(obraAudiovisual: obra)).toList(),
             ),
           ),
 
