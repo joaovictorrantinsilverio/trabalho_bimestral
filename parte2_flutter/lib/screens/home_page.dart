@@ -3,6 +3,7 @@ import 'package:parte2_flutter/screens/detalhe_obra_page.dart';
 
 import '../models/Catalogo.dart';
 import 'obra_card.dart';
+import 'cadastro_page.dart';
 
 class HomePage extends StatelessWidget {
   final Catalogo catalogo;
@@ -17,6 +18,22 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Catálogo de Filmes'),
+
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.add),
+
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => CadastroPage(
+                    catalogo: catalogo,
+            ),
+          ),
+        );
+      },
+    ),
+  ],
       ),
 
       body: Column(
