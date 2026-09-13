@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:parte2_flutter/screens/detalhe_obra_page.dart';
 
 import '../models/Catalogo.dart';
 import 'obra_card.dart';
@@ -43,12 +44,23 @@ class HomePage extends StatelessWidget {
               itemBuilder: (context, index) {
                 final obra = catalogo.obras[index];
 
-                return ObraCard(
-                  obraAudiovisual: obra,
+                return GestureDetector(  //Detecta quando o usuário toca
+                  onTap: () {  // Função que roda quando o toque acontece
+                    Navigator.of(context).push(  // Pega o controle de navegação do app e empilha uma nova tela por cima
+                      MaterialPageRoute(  // Define qual tela vai ser empilhada
+                        builder: (context) => DetalheObra(obraAudiovisual: obra),
+                      ),
+                    );
+                  },
+                  child: ObraCard(
+                    obraAudiovisual: obra,
+                  ),
                 );
+
               },
             ),
           ),
+
         ],
       ),
     );
