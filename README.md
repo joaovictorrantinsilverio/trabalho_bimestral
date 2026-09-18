@@ -13,4 +13,26 @@
 
 
 ===== [1] ENTIDADE PRINCIPAL =====
-Filme: Homem de Metal | 120 minutos | 8.7 | 2014-11-06 00:00:00.000.year | Ação/Super-Heróis | 
+
+Filme: Homem de Metal | 120 minutos | 8.7 | 2014-11-06 | Ação/Super-Heróis | 
+
+
+===== [2] HERANÇA =====
+
+Série: The Bois | 55 | 8 | Temporadas: 5 | 8.3 | 2019-07-26 | Ação/Super-heróis
+
+Série: Assasino Americano | 55 | 8 | Temporadas: 5 | 9.3 | 2020-01-01 | Ação
+
+
+===== [3] COMPOSIÇÃO =====
+
+Catálogo "Meus favoritos" contém 3 obras:
+
+  - Homem de Metal
+
+  - The Bois
+
+
+===== [4] ENCAPSULAMENTO =====
+
+Total de Obras Audiovisuais: 4
