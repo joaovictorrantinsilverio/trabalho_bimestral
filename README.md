@@ -1,8 +1,6 @@
 | # | Exercício     | Arquivo e linha | O que aparece na tela |
 | - | ------------- | ------------- |   ------------- |
-| 1  | Entidade principal  | parte1-dart/bin/models/ObraAudioVisual.dart:1  | Bloco [
-===== [1] ENTIDADE PRINCIPAL =====
-Filme: Homem de Metal | 120 minutos | 8.7 | 2014-11-06 00:00:00.000.year | Ação/Super-Heróis |] |
+| 1  | Entidade principal  | parte1-dart/bin/models/ObraAudioVisual.dart:1  | Bloco [1]|
 
 | 2  | Herança  | Content Cell  | Bloco [2] |
 | 3  | Composição  | Content Cell  | Bloco [3] |
@@ -14,3 +12,6 @@ Filme: Homem de Metal | 120 minutos | 8.7 | 2014-11-06 00:00:00.000.year | Açã
 | 9  | Formulário  | Content Cell  | |
 | 10 | Estado  | Content Cell  | |
 
+
+===== [1] ENTIDADE PRINCIPAL =====
+Filme: Homem de Metal | 120 minutos | 8.7 | 2014-11-06 00:00:00.000.year | Ação/Super-Heróis | 
