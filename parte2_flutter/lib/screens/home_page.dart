@@ -5,22 +5,13 @@ import '../models/Catalogo.dart';
 import 'obra_card.dart';
 import 'cadastro_page.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   final Catalogo catalogo;
 
   const HomePage({
     super.key,
     required this.catalogo,
   });
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-
-  // Catalogo utilizado nesta tela (acessado via widget.catalogo).
-  Catalogo get catalogo => widget.catalogo;
 
   @override
   Widget build(BuildContext context) {
@@ -32,19 +23,17 @@ class _HomePageState extends State<HomePage> {
           IconButton(
             icon: const Icon(Icons.add),
 
-            onPressed: () async {
-              await Navigator.of(context).push(
+            onPressed: () {
+              Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => CadastroPage(
                     catalogo: catalogo,
-                  ),
-                ),
-              );
-
-              setState(() {});
-            },
+            ),
           ),
-        ],
+        );
+      },
+    ),
+  ],
       ),
 
       body: Column(

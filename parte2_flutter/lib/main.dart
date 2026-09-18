@@ -10,9 +10,10 @@ void main() {
     nome: 'Catálogo de Filmes',
   );
 
+  // Filmes
   catalogo.adicionar(
     Filme(
-      titulo: 'Homem de Metal',
+      titulo: 'Homem de Cobre',
       duracao: 120,
       nota: 7.9,
       dataLancamento: DateTime(2008, 05, 02),
@@ -20,6 +21,27 @@ void main() {
     ),
   );
 
+  catalogo.adicionar(
+    Filme(
+      titulo: 'Conception',
+      duracao: 148,
+      nota: 6.7,
+      dataLancamento: DateTime(2010, 8, 6),
+      genero: 'Ficção Científica/Ação',
+    )
+  );
+
+  catalogo.adicionar(
+    Filme(
+      titulo: 'Titânicas',
+      duracao: 110,
+      nota: 8.5,
+      dataLancamento: DateTime(2012, 6, 23),
+      genero: 'Romance/Drama',
+    )
+  );
+
+  // Séries
   catalogo.adicionar(
     Serie(
       titulo: 'Breaking Good',
@@ -33,46 +55,26 @@ void main() {
   );
 
   catalogo.adicionar(
-    Filme(
-      titulo: 'O Grande Exemplo',
-      duracao: 152,
-      nota: 9.0,
-      dataLancamento: DateTime(2008, 07, 18),
-      genero: 'Ação',
+    Serie(
+      titulo: 'Stranger Wings',
+      duracaoEpisodios: 42,
+      nota: 8.8,
+      dataLancamento: DateTime(2016, 7, 15),
+      genero: 'Ficção Científica/Suspense',
+      quantidadeTemporadas: 5,
+      episodiosPorTemporada: 42,
     ),
   );
 
   catalogo.adicionar(
     Serie(
-      titulo: 'O Grande Exemplo 2',
+      titulo: 'Game of Phones',
       duracaoEpisodios: 50,
-      nota: 8.7,
-      dataLancamento: DateTime(2009, 07, 15),
-      genero: 'Ficção/Suspense',
-      quantidadeTemporadas: 5,
-      episodiosPorTemporada: 10,
-    ),
-  );
-
-  catalogo.adicionar(
-    Filme(
-      titulo: 'O Grande Exemplo - O Fim',
-      duracao: 152,
-      nota: 8.7,
-      dataLancamento: DateTime(2010, 11, 07),
-      genero: 'Ficção Científica',
-    ),
-  );
-
-  catalogo.adicionar(
-    Serie(
-      titulo: 'O Grande Exemplo - O Retorno',
-      duracaoEpisodios: 50,
-      nota: 8.5,
-      dataLancamento: DateTime(2011, 10, 10),
-      genero: 'Ação/Drama',
-      quantidadeTemporadas: 5,
-      episodiosPorTemporada: 10,
+      nota: 7.3,
+      dataLancamento: DateTime(2011, 4, 17),
+      genero: 'Fantasia/Drama',
+      quantidadeTemporadas: 8,
+      episodiosPorTemporada: 73,
     ),
   );
 
