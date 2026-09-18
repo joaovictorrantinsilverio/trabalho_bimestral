@@ -1,7 +1,6 @@
 | # | Exercício     | Arquivo e linha | O que aparece na tela |
 | - | ------------- | ------------- |   ------------- |
 | 1  | Entidade principal  | parte1-dart/bin/models/ObraAudioVisual.dart:1  | Bloco [1]|
-
 | 2  | Herança  | Content Cell  | Bloco [2] |
 | 3  | Composição  | Content Cell  | Bloco [3] |
 | 4  | Encapsulamento  | Content Cell  |Bloco [4] |
