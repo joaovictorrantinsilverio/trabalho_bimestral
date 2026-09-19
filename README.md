@@ -1,7 +1,7 @@
-|Integrantes: |
-| ------------|
-| João Victor Rantin Silvério |
-| Gustavo Shinozaki de Freitas |
+## Integrantes
+ João Victor Rantin Silvério 
+ | -------------------------- |
+ Gustavo Shinozaki de Freitas 
 
 ## Domínio
 
