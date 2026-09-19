@@ -1,6 +1,7 @@
-Grupo: 
-  João Victor Rantin Silvério
-  Gustavo Shinozaki de Freitas
+|Integrantes: |
+| ------------|
+| João Victor Rantin Silvério |
+| Gustavo Shinozaki de Freitas |
 
 
 | # | Exercício     | Arquivo e linha | O que aparece na tela |
