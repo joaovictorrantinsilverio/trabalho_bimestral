@@ -72,10 +72,7 @@ class _CadastroPageState extends State<CadastroPage> {
     );
 
     // adiciona o novo filme ao catalogo
-    widget.catalogo.adicionar(novoFilme);
-
-    // volta para a tela anterior depois do cadastro.
-    Navigator.of(context).pop();
+    Navigator.of(context).pop(novoFilme);
   }
 
   @override

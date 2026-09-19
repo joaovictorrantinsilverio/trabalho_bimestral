@@ -18,7 +18,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // acesso rápido ao catalogo passado pelo widget, evita ficar escrevendo "widget." toda hora
   Catalogo get catalogo => widget.catalogo;
 
   @override
@@ -33,13 +32,17 @@ class _HomePageState extends State<HomePage> {
 
             onPressed: () async {
               // "await" espera a CadastroPage fechar (o pop) antes de continuar.
-              await Navigator.of(context).push(
+              final novoFilme = await Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => CadastroPage(
-                    catalogo: catalogo,
-                  ),
+                  builder: (context) => CadastroPage(catalogo: catalogo),
                 ),
               );
+
+              if (novoFilme != null) {
+                setState(() {
+                  catalogo.adicionar(novoFilme);
+                });
+              }
 
               // Força a HomePage a reconstruir e ler a lista atualizada do catalogo.
               setState(() {});
