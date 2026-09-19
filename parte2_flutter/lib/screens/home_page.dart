@@ -5,13 +5,21 @@ import '../models/Catalogo.dart';
 import 'obra_card.dart';
 import 'cadastro_page.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   final Catalogo catalogo;
 
   const HomePage({
     super.key,
     required this.catalogo,
   });
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  // acesso rápido ao catalogo passado pelo widget, evita ficar escrevendo "widget." toda hora
+  Catalogo get catalogo => widget.catalogo;
 
   @override
   Widget build(BuildContext context) {
@@ -23,16 +31,20 @@ class HomePage extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.add),
 
-            onPressed: () {
-              Navigator.of(context).push(
+            onPressed: () async {
+              // "await" espera a CadastroPage fechar (o pop) antes de continuar.
+              await Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => CadastroPage(
                     catalogo: catalogo,
-            ),
+                  ),
+                ),
+              );
+
+              // Força a HomePage a reconstruir e ler a lista atualizada do catalogo.
+              setState(() {});
+            },
           ),
-        );
-      },
-    ),
   ],
       ),
 
