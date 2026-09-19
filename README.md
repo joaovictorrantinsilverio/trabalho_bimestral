@@ -3,6 +3,11 @@
 | João Victor Rantin Silvério |
 | Gustavo Shinozaki de Freitas |
 
+## Domínio
+
+O trabalho utiliza como tema uma aplicação de filmes, desenvolvida para organizar obras audiovisuais. O domínio possui as classes ObraAudiovisual, Filme, Serie e Catalogo. Filme e Serie são especializações de ObraAudiovisual, enquanto o Catalogo agrupa várias obras audiovisuais, estabelecendo uma relação de composição entre Catalogo e ObraAudiovisual.
+
+Dessa forma, cada filme ou série representa uma obra individual, e o catálogo é responsável por armazenar e organizar várias obras audiovisuais.
 
 | # | Exercício     | Arquivo e linha | O que aparece na tela |
 | - | ------------- | ------------- |   ------------- |
