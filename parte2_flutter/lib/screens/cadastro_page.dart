@@ -68,7 +68,7 @@ class _CadastroPageState extends State<CadastroPage> {
 
       // atributos preenchidos automaticamente por conta do limite de campos no cadastro
       dataLancamento: DateTime.now(),
-      genero: 'Não informado',
+      genero: 'Ação',
     );
 
     // adiciona o novo filme ao catalogo
