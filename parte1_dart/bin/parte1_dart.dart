@@ -24,7 +24,7 @@ void main() {
   ); 
 
   // Documentários
-  final doc = Serie(
+  final serie2 = Serie(
     titulo: 'Assasino Americano',
     duracaoEpisodios: 55,
     nota: 9.3,
@@ -41,7 +41,7 @@ void main() {
 
   catalogo.adicionar(filme);
   catalogo.adicionar(serie);
-  catalogo.adicionar(serie);
+  catalogo.adicionar(serie2);
 
   //Saida de dados
   print('===== [1] ENTIDADE PRINCIPAL =====');
@@ -51,7 +51,7 @@ void main() {
   print('===== [2] HERANÇA =====');
   serie.mostrarInfo();
 
-  doc.mostrarInfo();
+  serie2.mostrarInfo();
   
   print('');
   print('===== [3] COMPOSIÇÃO =====');
