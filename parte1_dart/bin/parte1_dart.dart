@@ -64,6 +64,7 @@ void main() {
   }
 
   print('===== [4] ENCAPSULAMENTO =====');
+  print('Total de Obras Audiovisuais antes.: ${catalogo.quantidadeTotal}');
   catalogo.adicionar(Filme(
     titulo: 'Lentos e Calmos',
     duracao: 106,
@@ -72,5 +73,5 @@ void main() {
     dataLancamento: DateTime(2001, 9, 11)
   ));
 
-  print('Total de Obras Audiovisuais: ${catalogo.quantidadeTotal}');
+  print('Total de Obras Audiovisuais depois: ${catalogo.quantidadeTotal}');
 }

@@ -16,10 +16,16 @@ class DetalheObra extends StatelessWidget {
     final obraAtual = obraAudiovisual;
 
     return Scaffold(
+      backgroundColor: Color(0xFF16213E),
       appBar: AppBar(
+        backgroundColor: Color(0xFF16213E),
         title: Text(
           obraAudiovisual.titulo,
-          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: const TextStyle(
+            fontSize: 20, 
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
           ),
       ),
 
@@ -59,7 +65,7 @@ class DetalheObra extends StatelessWidget {
 
               if (obraAtual is Serie) ...[
                Text('Quantidade de Temporadas: ${obraAtual.quantidadeTemporadas}'),
-                Text('Episodios por temporada: ${obraAtual.episodiosPorTemporada}'),
+               Text('Episodios por temporada: ${obraAtual.episodiosPorTemporada}'),
                Text('Duração dos episodios: ${obraAtual.duracaoEpisodios} minutos')
              ],
            ],

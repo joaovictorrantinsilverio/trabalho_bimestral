@@ -15,7 +15,7 @@ class ObraCard extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white,     
+        color: Color(0xFFFFF8E7),     
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(

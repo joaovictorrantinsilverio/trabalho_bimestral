@@ -78,10 +78,16 @@ class _CadastroPageState extends State<CadastroPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      backgroundColor: Color(0xFF16213E),
       // barra superior da tela de cadastro.
       appBar: AppBar(
+        backgroundColor: Color(0xFF16213E),
         title: const Text('Cadastrar Filme'),
+        titleTextStyle: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+          color: Colors.white
+        ),
       ),
 
       body: Padding(
@@ -93,11 +99,19 @@ class _CadastroPageState extends State<CadastroPage> {
             // campo 1: título do filme.
             TextFormField(
               controller: tituloController,
+              cursorColor: Colors.white,
 
               // InputDecoration permite personalizar o campo.
               decoration: InputDecoration(
                 labelText: 'Título',
-                prefixIcon: const Icon(Icons.movie),
+                labelStyle: TextStyle(
+                  fontSize: 15,
+                  color: Colors.grey
+                ),
+                prefixIcon: const Icon(
+                  Icons.movie,
+                  color: Colors.white,
+                  ),
 
                 // borda arredondada solicitada no enunciado.
                 border: OutlineInputBorder(
@@ -111,13 +125,21 @@ class _CadastroPageState extends State<CadastroPage> {
             // campo 2: nota do filme.
             TextFormField(
               controller: notaController,
+              cursorColor: Colors.white,
 
               // teclado numérico para facilitar a entrada da nota.
               keyboardType: TextInputType.number,
 
               decoration: InputDecoration(
                 labelText: 'Nota',
-                prefixIcon: const Icon(Icons.star),
+                labelStyle: TextStyle(
+                  fontSize: 15,
+                  color: Colors.grey
+                ),
+                prefixIcon: const Icon(
+                  Icons.star,
+                  color: Colors.white
+                ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
@@ -129,13 +151,21 @@ class _CadastroPageState extends State<CadastroPage> {
             // campo 3: duração do filme.
             TextFormField(
               controller: duracaoController,
+              cursorColor: Colors.white,
 
               // teclado numérico porque a duração é um int.
               keyboardType: TextInputType.number,
 
               decoration: InputDecoration(
                 labelText: 'Duração em minutos',
-                prefixIcon: const Icon(Icons.timer),
+                labelStyle: TextStyle(
+                  fontSize: 15,
+                  color: Colors.grey
+                ),
+                prefixIcon: const Icon(
+                  Icons.timer,
+                  color: Colors.white
+                ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),

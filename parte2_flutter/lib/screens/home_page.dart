@@ -23,12 +23,22 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFF1A1A2E),
       appBar: AppBar(
+        backgroundColor: Color(0xFF16213E),
         title: const Text('Catálogo de Filmes'),
+        titleTextStyle: const TextStyle(
+          color: Colors.white,
+          fontSize: 20,
+          fontWeight: FontWeight.bold
+        ),
 
         actions: [
           IconButton(
-            icon: const Icon(Icons.add),
+            icon: const Icon(
+              Icons.add,
+              color: Colors.white
+              ),
 
             onPressed: () async {
               // "await" espera a CadastroPage fechar (o pop) antes de continuar.
@@ -65,6 +75,7 @@ class _HomePageState extends State<HomePage> {
               style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
+                color: Colors.white
               ),
             ),
           ),
