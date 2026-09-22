@@ -81,6 +81,9 @@ class _CadastroPageState extends State<CadastroPage> {
       backgroundColor: Color(0xFF16213E),
       // barra superior da tela de cadastro.
       appBar: AppBar(
+        iconTheme: const IconThemeData(
+          color: Colors.white
+        ),
         backgroundColor: Color(0xFF16213E),
         title: const Text('Cadastrar Filme'),
         titleTextStyle: TextStyle(
@@ -103,14 +106,16 @@ class _CadastroPageState extends State<CadastroPage> {
 
               // InputDecoration permite personalizar o campo.
               decoration: InputDecoration(
+                filled: true,
+                fillColor: Color.fromARGB(200, 255, 248, 231),
                 labelText: 'Título',
                 labelStyle: TextStyle(
                   fontSize: 15,
-                  color: Colors.grey
+                  color: Colors.black87
                 ),
                 prefixIcon: const Icon(
                   Icons.movie,
-                  color: Colors.white,
+                  color: Colors.black54,
                   ),
 
                 // borda arredondada solicitada no enunciado.
@@ -131,14 +136,16 @@ class _CadastroPageState extends State<CadastroPage> {
               keyboardType: TextInputType.number,
 
               decoration: InputDecoration(
+                filled: true,
+                fillColor: Color.fromARGB(200, 255, 248, 231),
                 labelText: 'Nota',
                 labelStyle: TextStyle(
                   fontSize: 15,
-                  color: Colors.grey
+                  color: Colors.black87
                 ),
                 prefixIcon: const Icon(
                   Icons.star,
-                  color: Colors.white
+                  color: Colors.black54
                 ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
@@ -157,14 +164,16 @@ class _CadastroPageState extends State<CadastroPage> {
               keyboardType: TextInputType.number,
 
               decoration: InputDecoration(
-                labelText: 'Duração em minutos',
+                filled: true,
+                fillColor: Color.fromARGB(200, 255, 248, 231),
+                labelText: 'Duração (em minutos)',
                 labelStyle: TextStyle(
                   fontSize: 15,
-                  color: Colors.grey
+                  color: Colors.black87
                 ),
                 prefixIcon: const Icon(
                   Icons.timer,
-                  color: Colors.white
+                  color: Colors.black54
                 ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),

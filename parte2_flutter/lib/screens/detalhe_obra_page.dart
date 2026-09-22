@@ -18,6 +18,9 @@ class DetalheObra extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xFF16213E),
       appBar: AppBar(
+        iconTheme: const IconThemeData(
+          color: Colors.white
+        ),
         backgroundColor: Color(0xFF16213E),
         title: Text(
           obraAudiovisual.titulo,
@@ -54,8 +57,8 @@ class DetalheObra extends StatelessWidget {
               Text(
                 'Lançamento: '
                 '${obraAtual.dataLancamento.day.toString().padLeft(2, '0')}/'
-               '${obraAtual.dataLancamento.month.toString().padLeft(2, '0')}/'
-               '${obraAtual.dataLancamento.year}'
+                '${obraAtual.dataLancamento.month.toString().padLeft(2, '0')}/'
+                '${obraAtual.dataLancamento.year}'
               ),
               Text('Gênero: ${obraAudiovisual.genero}'),
 
